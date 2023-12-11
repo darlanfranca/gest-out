@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../resources/styles/style.css">  
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Usuários</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a class="navbar-brand" href="../index/index.html">gest-out</a>
+            <div class="side-menu" id="sideMenu">
+                <a href="index.html">Usuários</a>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <button class="btn btn-danger" onclick="logout()">Sair</button>
+        </div>
+    
+    </div>
+
+    <div class="content">
+        <h1 class="mt-4">Usuários Cadastrados</h1>
+        <table  class="table mt-4">
+         <tbody id="userTable"></tbody>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../../resources/scripts/index.js"></script>
+    <script src="profile.js"></script>
+    <script>
+    displayUserProfiles();
+    </script>
+</body>
+</html>

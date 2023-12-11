@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../resources/styles/style.css"> 
+    <title>Página Inicial</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a class="navbar-brand" href="../index/index.html">gest-out</a>
+            <div class="side-menu" id="sideMenu">
+                <a href="../profile/index.html">Usuários</a>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <button class="btn btn-danger" onclick="logout()">Sair</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content mt-4">
+            <h1>Equipamentos</h1>
+            <button type="button" class="btn btn-primary text-left" id="openModalBtn">Novo +</button>
+        </div>
+    </div>
+
+    <div id="itemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itemModalLabel">Cadastrar Equipamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" onclick="fecharModal()" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="itemForm" class="row g-3">
+                        <div class="modal-body">
+                            <form id="itemForm" class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="itemInput">Item:</label>
+                                        <input type="text" class="form-control" readonly id="itemInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="equipamentoInput">Equipamento:</label>
+                                        <input type="text" class="form-control" id="equipamentoInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="modeloInput">Modelo:</label>
+                                        <input type="text" class="form-control" id="modeloInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="snInput">S/N:</label>
+                                        <input type="text" class="form-control" id="snInput" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="patrimonioInput">Patrimônio:</label>
+                                        <input type="text" class="form-control" id="patrimonioInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="marcaInput">Marca:</label>
+                                        <input type="text" class="form-control" id="marcaInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clienteInput">Cliente:</label>
+                                        <input type="text" class="form-control" id="clienteInput" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="situacaoInput">Situação:</label>
+                                        <input type="text" class="form-control" id="situacaoInput" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="button" class="btn btn-primary" onclick="saveOrUpdateItem()">Salvar/Atualizar</button>
+                                    <button type="button" class="btn btn-secondary" onclick="clearForm()">Limpar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Patrimônio</th>
+                <th>Equipamento</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>S/N</th>
+                <th>Cliente</th>
+                <th>Situação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../../resources/scripts/index.js"></script>
+    <script src="index.js"></script>
+
+    <script>
+        $(function(){
+            $("#openModalBtn").click(function(){
+                $("#itemModal").modal('show');
+            });
+        });
+    </script>
+</body>
+</html>

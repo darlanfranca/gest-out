@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f2eb;
+}
+
+label {
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+input {
+    border: 0.2vw solid #ccc;
+    border-radius: 1vw;
+    font-size: 2vh;
+}
+
+.btn-success {
+    background-color: #04ba71!important;
+    border-color: #04ba71!important;
+}
+
+.btn-success:hover {
+    background-color: #4cd964!important;
+    border-color: #4cd964!important;
+}
+
+p {
+    margin-top: 1vh;
+}
+
+a {
+    color: #bdb8b8!important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347!important;
+}
+
+.content {
+    padding: 2vw;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #003c5d;
+    color: #fff;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 3vh;
+}
+
+.menu-icon {
+    font-size: 2vw;
+    cursor: pointer;
+    margin-right: 2vw;
+}
+
+.side-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #003c5d;
+    padding: 2vw;
+    top: 6vh;
+    left: 0;
+}
+
+.side-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 1vh;
+}
+
+th, td {
+    background-color: #f5f2eb!important;
+    border: 0.2vw solid #ddd;
+    padding: 2vh;
+    text-align: left;
+}
+
+th {
+    background: #e7e2e2;
+    color: #333333;
+}
+
+.faixa-superior {
+    background-color: #003c5d!important;
+    color: #fff!important;
+    border-radius:23px 23px 0 0!important;;
+}
+
+.faixa-inferior {
+    background-color: #003c5d!important;
+    color: #fff!important;
+    border-radius: 0 0 23px 23px!important;;
+    
+}
+
+.login-container {
+    text-align: center;
+}
+
+.card-body {
+    background-color: #f5f2eb;
+}
+
+.card {
+    background-color: #f5f2eb!important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 23px!important;
+    border: none!important;
+}
+
+.logo {
+    margin-top: 10vh;
+    margin-bottom: -5vh;
+    text-align: center;
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#showPassword{
+    cursor: pointer;
+}
