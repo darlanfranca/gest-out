@@ -1,4 +1,8 @@
 # gest-out
+Trata-se de um sistema desenvolvido para controle de estoque de equipamentos em uma empresa de outsourcing..
+a aplicação foi desenvolvido com intuíto de cumprir com os Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA) referentes a disciplina de DESENVOLVIMENTO DE PÁGINAS WEB COM FRAMEWORK E CSS do segundo periodo de TSI na UTFPR/GP (2023)
+Utilizando Javascript, CSS, HTML, Bootstrap, Algumas bibliotecas como Jquery, Sweetalert entre outros.. 
+
 
 ## Endereço de Deploy - GitHub Pages
 
